@@ -6,12 +6,14 @@ A light Bash script to perform incremental backups to a remote server using `rsy
 
 - **rsync**: Installed locally and remotely.
 - **SSH Key**: Access by private key to the remote server (recommended for automation without a password).
+- **jq**: Script detects if missing and tries to install it automatically (requires sudo privileges).
 
 ## 📁 Project Structure
 
 - `rsync_remote.sh`: The main execution script.
 - `backup_list.json`: List of absolute paths to backups.
 - `.env`: Environment variables (IP, user, paths).
+- `backup.log`: Log file of the script execution.
 
 ## ⚙️ Configuration
 
@@ -49,6 +51,11 @@ A light Bash script to perform incremental backups to a remote server using `rsy
 1. **Run the script:**
    ```bash
    ./rsync_remote.sh
+   ```
+
+   (or dry run to test without copying files):
+   ```bash
+   ./rsync_remote.sh --dry-run
    ```
 
 2. **Schedule the sync:**
