@@ -1,0 +1,3 @@
+/var/www/html/ /path/to/remote/backup/web/
+/etc/nginx/conf.d/ /path/to/remote/backup/nginx/
+/home/user/data/ /path/to/remote/backup/data/

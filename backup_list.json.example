@@ -1,0 +1,17 @@
+[
+  {
+    "source": "/var/www/html/",
+    "target": "/path/to/remote/backup/web/",
+    "retention_days": 30
+  },
+  {
+    "source": "/etc/nginx/conf.d/",
+    "target": "/path/to/remote/backup/nginx/",
+    "retention_days": 90
+  },
+  {
+    "source": "/home/user/data/",
+    "target": "/path/to/remote/backup/data/",
+    "retention_days": 180
+  }
+]
