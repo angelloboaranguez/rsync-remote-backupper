@@ -4,7 +4,7 @@ set -euo pipefail
 # Script directories
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ENV_PATH="$SCRIPT_DIR/.env"
-LIST_PATH="$SCRIPT_DIR/backup_list.json"
+LIST_PATH="$SCRIPT_DIR/config/backup_list.json"
 LOG_FILE="$SCRIPT_DIR/backup.log"
 
 # 1. Dependency check (jq)
